@@ -5,35 +5,42 @@
 	<!ELEMENT quiz (title, items)>
 	<!ELEMENT title (#PCDATA)>
 	<!ELEMENT items (item)+>	
-	<!ELEMENT item (question, answer, answer+)>
+	<!ELEMENT item (question,answer+)>
 	<!ELEMENT question (#PCDATA)>
 	<!ELEMENT answer (#PCDATA)>
 	<!ATTLIST answer correct (yes) #IMPLIED>
 ]>
 
 <quiz>
-  <title>Demo quiz</title>
+    <title>Demo quiz</title>
     <items>
-      <item>
-        <question>In which continent is the country Japan located?</question>
-        <answer correct="yes">Asia</answer>
-        <answer>Europe</answer>
-        <answer>Africa</answer>
-        <answer>America</answer>
-      </item>
-      <item>
-        <question>Which one cannot swim?</question>
-        <answer correct="yes">Cow</answer>
-        <answer>Tuna</answer>
-        <answer>Whale</answer>
-        <answer>Lobster</answer>
-      </item>		
-      <item>
-        <question>How many points are on a hexagon?</question>
-        <answer correct="yes">6</answer>
-        <answer>5</answer>
-        <answer>7</answer>
-        <answer>8</answer>
-      </item>		
+        <item>
+            <question>In which continent is the country Japan located?</question>
+            <answer correct="yes">Asia</answer>
+            <answer>Europe</answer>
+            <answer>Africa</answer>
+            <answer>America</answer>
+        </item>
+        <item>
+            <question>Which one cannot swim?</question>
+            <answer correct="yes">Cow</answer>
+            <answer>Tuna</answer>
+            <answer>Whale</answer>
+            <answer>Lobster</answer>
+        </item>		
+        <item>
+            <question>How many points are on a hexagon?</question>
+            <answer correct="yes">6</answer>
+            <answer>5</answer>
+            <answer>7</answer>
+            <answer>8</answer>
+        </item>	
+        <item>
+            <question>Web Tech Staff Name</question>
+            <answer correct="yes">Karthiga</answer>
+            <answer>Suganya</answer>
+            <answer>Nisha</answer>
+            <answer>Thangavel</answer>
+        </item>	
     </items>
 </quiz>
