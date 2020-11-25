@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Practice</title>
+</head>
+<body>
+    <h2>Book Details</h2>
+    <div>
+        <p id="book-details"></p>
+    </div>
+</body>
+
+<script type="text/javascript" src="text.json"></script>
+<script>
+
+    var book = JSON.parse(text);
+    var details = JSON.stringify(book);
+    document.getElementById("book-details").innerHTML = details.book;
+    console.log(book);
+
+</script>
+</html>

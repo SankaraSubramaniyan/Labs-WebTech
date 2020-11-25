@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="profile.xsl"?>
+<!DOCTYPE profiles [
+	<!ELEMENT profiles (user+)>
+	<!ELEMENT user (uid,name,score,totalquizes)>
+	<!ELEMENT uid (#PCDATA)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT score (#PCDATA)>
+	<!ELEMENT totalquizes (#PCDATA)>
+]>
+
+<profiles>
+    <user>
+        <uid>8569</uid>
+        <name>Sankara Subramaniyan</name>
+        <score>85</score>
+        <totalquizes>3</totalquizes>
+    </user>
+    <user>
+        <uid>4579</uid>
+        <name>Vinoth</name>
+        <score>98</score>
+        <totalquizes>5</totalquizes>
+    </user>
+</profiles>

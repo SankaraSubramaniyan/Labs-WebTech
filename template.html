@@ -1,34 +1,43 @@
 <div class="quiz-area" ng-show="inProgress">
 	<div ng-show="!quizOver">
 		<h2 id="question">{{question}}</h2>
-		<ul id="options">
-			<li ng-repeat="option in options">
-				<label>
-					<input type="radio" name="answer" value="{{option}}">
-					{{option}}
-				</label>
+		<ul id="options" class="list-group">
+			<li style="margin-left: 10px;" class="list-group-item" ng-repeat="option in options">
+
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="answer" id="exampleRadios1" value="{{option}}">
+					<label class="form-check-label" for="answer">
+					  {{option}}
+					</label>
+				</div>
+				
 			</li>
 		</ul>
-		<button ng-click="checkAnswer()" ng-show="answerMode">Submit</button>
 
-		<div ng-show="!answerMode">
-			<button ng-click="nextQuestion()" class="next-question">Next</button>
-			<span ng-show="correctAns">That is correct!</span>
-			<span ng-show="!correctAns">Sorry, that is an incorrect answer.</span>
+		<button class="btn btn-success" ng-click="checkAnswer()" ng-show="answerMode">Go</button>
+
+		<div ng-show="!answerMode" class="container">
+			<button ng-click="nextQuestion()" class="next-question btn btn-primary">Next</button>
+			<span ng-show="correctAns" class="text-success">That is right!</span>
+			<span ng-show="!correctAns" class="text-danger">incorrect answer.</span>
 		</div>
 	</div>
 
 	<div ng-show="quizOver">
-		<h2>Quiz is over</h2>
-		<button ng-click="reset()">Play again</button>
+		<h2>Completed</h2>
+		<button class="btn btn-danger" ng-click="reset()">Again</button>
 	</div>
 
 	<div id="score">
-		Score: {{score}}
+		Your point is: {{score}}
 	</div>
 </div>
-
-<div class="intro" ng-show="!inProgress">
-	<p>Welcome to the QuizApp</p>
-	<button id="startQuiz" ng-click="start()">Start the Quiz</button>
+<div class="container">
+	<div class="intro" ng-show="!inProgress">
+		<p class="display-3 text-center">Welcome</p><br>
+		<div class="container">
+			<!-- <h5 class="text-center">Are you ready to take the quiz</h5> -->
+			<button id="startQuiz" class="btn btn-secondary text-center" ng-click="start()">Start the Quiz</button>
+		</div>
+	</div>
 </div>

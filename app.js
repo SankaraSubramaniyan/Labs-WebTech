@@ -58,28 +58,28 @@ app.directive('quiz', function(quizFactory) {
 app.factory('quizFactory', function() {
 	var questions = [
 		{
-			question: "Which is the largest country in the world by population?",
-			options: ["India", "USA", "China", "Russia"],
+			question: "____________is collection of interrelated data and set of program to access them.",
+			options: ["Database Management System", "Data Structure System", "File Management System", "Hadoop"],
+			answer: 0
+		},
+		{
+			question: "_________ is used to define code that is executed/fired when certain actions or event occur.",
+			options: ["Cursor", "1Trigger", "1Keywords", "Truncate"],
+			answer: 1
+		},
+		{
+			question: "Which is used to specify the user views and their mappings to the conceptual schema?",
+			options: ["DDL", "DML", "VDL", "SQL"],
 			answer: 2
 		},
 		{
-			question: "When did the second world war end?",
-			options: ["1945", "1939", "1944", "1942"],
-			answer: 0
-		},
-		{
-			question: "Which was the first country to issue paper currency?",
-			options: ["USA", "France", "Italy", "China"],
-			answer: 3
-		},
-		{
-			question: "Which city hosted the 1996 Summer Olympics?",
-			options: ["Atlanta", "Sydney", "Athens", "Beijing"],
+			question: "In __________, the management of the password for the account can be handled outside of oracle such as operating system",
+			options: ["Database Authentication", "External Authentication", "Root Authentication", "OS Authentication"],
 			answer: 0
 		},
 		{	
-			question: "Who invented telephone?",
-			options: ["Albert Einstein", "Alexander Graham Bell", "Isaac Newton", "Marie Curie"],
+			question: "Which year was Java invented and by who?",
+			options: ["1997,Charles Babbage", "1990,Bill Gates", "1992,Steve Jobs", "1995,James Gosling"],
 			answer: 1
 		}
 	];

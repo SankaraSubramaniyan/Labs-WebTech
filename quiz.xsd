@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="quiz">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element ref="items"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="items">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="item"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="item">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="question"/>
+        <xs:element maxOccurs="unbounded" ref="answer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="question" type="xs:string"/>
+  <xs:element name="answer">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:NMTOKEN">
+          <xs:attribute name="correct" type="xs:NCName"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
