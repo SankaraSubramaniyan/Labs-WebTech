@@ -1,0 +1,18 @@
+{
+    "title": "Test Quiz",
+    "1":{
+        "question": "In which continent is the country Japan located?",
+        "answer":["asia","europe","africa","america"],
+        "correct": "asia"
+    },
+    "2":{
+        "question": "Which one cannot swim?",
+        "answer":["cow","whale","lobster","tuna"],
+        "correct": "cow"
+    },
+    "3":{
+        "question": "Web Tech Staff Name?",
+        "answer":["karthiga","nisha","karthikeyan","thangavel"],
+        "correct": "karthiga"
+    }
+}

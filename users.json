@@ -1,0 +1,28 @@
+{
+    "users":[
+        {
+            "name": "Sankara",
+            "uid": 25874,
+            "total_quiz":5,
+            "score": 100
+        },
+        {
+            "name": "Vinoth",
+            "uid": 58969,
+            "total_quiz":4,
+            "score": 90
+        },
+        {
+            "name": "Yogith",
+            "uid": 52369,
+            "total_quiz":1,
+            "score": 50
+        },
+        {
+            "name": "Daniel",
+            "uid": 74589,
+            "total_quiz":2,
+            "score": 20
+        }
+    ]
+}
